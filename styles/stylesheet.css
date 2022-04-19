@@ -1,9 +1,33 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  font-family: Helvetica, sans-serif;
+  color:#3D3D3C;
+}
+
+.hidden {
+  position: relative;
+  left: -10000px;
+  top: auto;
+}
+
+.hidden:focus {
+  left: 0;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
 header {
-  background-color: #2C9BB4;
-  padding: 40px;
+  background-color: #247F94;
+  padding: 5rem;
   padding-left: 120px;
   color: white;
 }
@@ -17,37 +41,45 @@ header h3 {
   font-weight: normal;
   font-style: italic;
   font-size: 20px;
-  width: 280px;
 }
 
 .nav-bar {
-  background-color: #E5E6E6;
-  padding: 20px;
-  padding-left: 100px;
-  color: #868586;
   font-weight: bold;
+  float: right;
 
 }
 
 .nav-bar a {
-  color: rgb(72, 79, 88);
+  color: white;
+  margin: 1rem;
+  padding: 2rem;
 }
 
-body {
-  font-family: Helvetica, sans-serif;
-  color:#3D3D3C;
+.nav-bar a:hover {
+  background-color:#3D3D3C;
+  border-radius: 4px;
 }
+
+
 
 section{
   width: 50%;
 }
 article {
   line-height: 2;
-  margin-left: 100px;
+  padding: 1rem;
+  margin: 1rem
+}
+
+article p h3 h2 {
+  padding: 1rem;
+  margin: 1rem;
+  box-sizing: border-box;
+
 }
 
 .first h3 {
-color: #2C9AB7;
+color: #247F94;
 }
 
 .testimonial p {
@@ -61,6 +93,8 @@ color: #2C9AB7;
 
 aside {
   float: right;
+  padding: 3rem;
+  margin: 1rem;
   color: #3D3D3C;
   width: 400px;
 
@@ -96,16 +130,9 @@ input[type=submit]:hover {
   padding: 20px;
 }
 
-
-aside p {
-  width: 300px;
-  line-height: 1.2;
-}
-
 aside a {
   color: #62BBD1;
 }
-
 
 a {
   text-decoration: none;
@@ -113,21 +140,25 @@ a {
 
 footer {
   background-color: #3D3D3C;
-  padding: 40px;
   color: white;
+  margin-top: 5rem;
   text-align: center;
-  margin-top: 200px;
   width:  100%;
+  padding: 2rem;
 
 }
 
-footer img{
-  width: 15%;
-}
-
-footer a {
+.footer-link a {
   color: white;
   font-weight: bold;
   line-height: 5;
+  margin: 1rem;
+  padding: 1rem;
 
+}
+
+.footer-link a:hover {
+  background-color:white;
+  color: #3D3D3C;
+  border-radius: 4px;
 }
